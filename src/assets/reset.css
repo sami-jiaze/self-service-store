@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+hr{
+  height:0px;
+  border-top:1px solid;
+  border-right:0px;
+  border-bottom:0px;
+  border-left:0px;
+}
+@font-face {
+  font-family: 'FEN';
+  src: url(./font/ziti.ttf);
+}

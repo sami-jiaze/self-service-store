@@ -1,32 +1,17 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div>
+    <router-view v-wechat-title='$route.meta.title'></router-view>
   </div>
 </template>
 
+<script>
+export default {
+  // created() {
+  //   // eslint-disable-next-line no-unused-expressions
+  //   sessionStorage.getItem('shopTime')
+  //     ? this.$store.dispatch('selectData/resetDataList', JSON.parse(sessionStorage.getItem('dataList'))) : {}
+  // }
+}
+</script>
 <style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>
